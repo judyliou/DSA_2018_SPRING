@@ -32,8 +32,8 @@ bool on_curve(int j, int k, int t){
 }
 
 
-
 int main(){
+	
 	int T = 0;
 	cin >> T;
 	
@@ -85,7 +85,6 @@ int main(){
 		dp[2] = 1;
 
 		for (int l = 3; l < B; l++){
-
 			for (int j = 0; j < n; j++){
 				if (((1 << j) & l) == 0) continue; 
 				
@@ -96,17 +95,15 @@ int main(){
 					int s_ = l & (~p); //l - p
 
 					dp[l] = min(dp[s_] +1, dp[l]);
-					
 				}
 				break;
 			}
 		}
+		
 		cout << dp[B-1];
-
 		if (i != T - 1)
 			cout << endl;
-		
-		
+
 		
 		for (int j = 0; j < n; j++){
 			delete[] para[j];
