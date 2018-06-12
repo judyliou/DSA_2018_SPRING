@@ -54,27 +54,8 @@ int main(){
 			cnt_a = (cnt_a + cnt[i]) % M;
 		}
 	}
+		
 	
-//		cout << "fries ";
-//		for (int i = 0; i < days; i++){
-//			cout << fries[i] << " ";
-//		}
-//		cout << endl << "len   ";
-//		for (int i = 0; i < days; i++){
-//			cout << len[i] << " ";
-//		}
-//		cout << endl << "cnt   ";
-//		for (int i = 0; i < days; i++){
-//			cout << cnt[i] << " ";
-//		}
-//		cout << endl << "pre   ";
-//		for (int i = 0; i < days; i++){
-//			cout << pre[i] << " ";
-//		}
-//		cout << endl;
-	
-	
-
 	//fill in and print out
 	vector <int> record;
 	record.push_back(last_day);
