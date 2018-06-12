@@ -1,7 +1,6 @@
 #include <iostream>
 #include <unordered_map>
 #include <string>
-//#include <bitset>
 using namespace std;
 
 // to do: 
@@ -131,8 +130,7 @@ int WhoWin(long long board, int round){
 		for (int i = 0; i < can_choose; i++){
 			for (int j = i+1; j < can_choose; j++){
 				long long newboard = board;
-				///cout << "round:" << round << " i j: " << i << "/" << j << endl;
-				
+						
 				//add two place with O
 				long long O = 2;
 				newboard = (newboard | (O << blank_pos[i]*2));
@@ -178,7 +176,6 @@ int main(){
 		}
 		
 		int round = -1;
-		
 	
 		if (blank > 0) round = 12 - (blank - 3) / 2;
 		else round = 13;
@@ -191,7 +188,6 @@ int main(){
 		
 		if (i != num-1) cout << endl;
 	} 
-
 	
 	return 0;	
 }
