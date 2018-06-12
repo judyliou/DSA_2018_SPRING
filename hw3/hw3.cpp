@@ -185,7 +185,6 @@ int main(){
 		if (x == 1) cout << "O win";
 		else if (x == 0) cout << "Draw";
 		else cout << "X win";
-		
 		if (i != num-1) cout << endl;
 	} 
 	
