@@ -54,8 +54,7 @@ int main(){
 			cnt_a = (cnt_a + cnt[i]) % M;
 		}
 	}
-		
-	
+			
 	//fill in and print out
 	vector <int> record;
 	record.push_back(last_day);
@@ -63,8 +62,7 @@ int main(){
 	while(record.back() != -1){
 		record.push_back(pre[record.back()]);
 	}
-	
-	
+		
 	//print
 	//cout << last_day << endl;
 	cout << len_a << endl;
@@ -74,8 +72,7 @@ int main(){
 		if (i != len_a - 1)
 			cout << " ";
 	}
-	
-	
+		
 	delete [] fries;
 	delete [] len;
 	delete [] cnt;
